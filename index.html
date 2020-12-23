@@ -8,6 +8,39 @@
         td {
             text-align: center;
         }
+
+        table { text-align: center; border-spacing: 0; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+        colgroup:nth-child(1) { border: 0 none; }
+        colgroup:nth-child(2) { border: 1px solid #ccc; }
+        colgroup:nth-child(3) { border: 1px solid #ccc; }
+        colgroup:nth-child(4) { border: 1px solid #ccc; }
+        colgroup:nth-child(5) { border: 1px solid #ccc; }
+        colgroup:nth-child(6) { border: 1px solid #ccc; }
+        colgroup:nth-child(7) { border: 1px solid #ccc; }
+
+        /* Tablehead */
+
+        /* thead th { background: #def4fe; background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 100%); background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%); text-align: center; position: relative; border-bottom: 1px solid #ccc; padding: 3em 0 2em; font-weight: 400; color: #999; }
+        thead th:nth-child(1) { background: transparent;  }
+        thead th:nth-child(3) {  padding: 2em 0 5em; }
+        thead th h2 { font-weight: 300; font-size: 2.4em; line-height: 1.2; color: #59c7fb; }
+        thead th h2 + p { font-size: 1.25em; line-height: 1.4; }
+        thead th:nth-child(3) h2 { font-size: 3.6em; }
+        thead th:nth-child(3) h2 + p { font-size: 1.5em; }
+
+        thead th p.promo { font-size: 1em; color: #fff; position: absolute; top: 9em; left: -17px; z-index: 1000; width: 100%; margin: 0; padding: .625em 17px .75em; background: #c00; box-shadow: 0 2px 4px rgba(0,0,0,.25); border-bottom: 1px solid #900; }
+
+        thead th p.promo:before { content: ""; position: absolute; display: block; width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 0; border-color: transparent #900 transparent transparent; bottom: -7px; left: 0; }
+        thead th p.promo:after { content: ""; position: absolute; display: block; width: 0px; height: 0px; border-style: solid; border-width: 7px 7px 0 0; border-color: #900 transparent transparent transparent; bottom: -7px; right: 0; }
+
+        /* Tablebody */
+
+        tbody td { background: #fff; text-align: center; }
+
+        tbody tr:nth-child(even) th,
+        tbody tr:nth-child(even) td { background: #f5f5f5; border: 1px solid #ccc; border-width: 1px 0 1px 1px; }
+        tbody tr:last-child td { border-bottom: 0 none; }
     </style>
 </head>
 
@@ -16,72 +49,83 @@
         <h1>야구9단 L선수 재료 목록</h1>
         <h2>1차 리미티드 (2013년)</h2>
         <table style="margin: 0 auto;">
-            <tr>
-                <td style="width: 50px;"></td>
-                <td style="width: 120px;">L선수</td>
-                <td style="width: 120px;">재료1(10)</td>
-                <td style="width: 120px;">재료2(9)</td>
-                <td style="width: 120px;">재료3(8)</td>
-                <td style="width: 120px;">재료4(8)</td>
-                <td style="width: 120px;">재료5(6)</td>
-            </tr>
-            <tr>
-                <td rowspan="7">1주차</td>
-                <td>83장명부L</td>
-                <td>09페타지니<br>(39세)</td>
-                <td>87이광은<br>(33세)</td>
-                <td>86김재박A<br>(33세)</td>
-                <td>11안지만上<br>(29세)</td>
-                <td>11이승호上<br>(31세)</td>
-            </tr>
-            <tr>
-                <td>13이재학L</td>
-                <td>07양준혁<br>(39세)</td>
-                <td>13채태인<br>(32세)</td>
-                <td>88한영준A<br>(27세)</td>
-                <td>85김광수A<br>(27세)</td>
-                <td>11윤성환上<br>(31세)</td>
-            </tr>
-            <tr>
-                <td>95김용수L</td>
-                <td>05데이비스<br>(37세)</td>
-                <td>10박한이<br>(32세)</td>
-                <td>86김형석<br>(25세)</td>
-                <td>13모창민<br>(29세)</td>
-                <td>10김일엽<br>(31세)</td>
-            </tr>
-            <tr>
-                <td>87장효조L</td>
-                <td>04피어리<br>(36세)</td>
-                <td>09신명철<br>(32세)</td>
-                <td>87정구선<br>(32세)</td>
-                <td>83김봉연A<br>(32세)</td>
-                <td>10김사율<br>(31세)</td>
-            </tr>
-            <tr>
-                <td>10이대호L</td>
-                <td>10조인성<br>(36세)</td>
-                <td>07박진만<br>(32세)</td>
-                <td>83김봉연<br>(32세)</td>
-                <td>09이진영<br>(30세)</td>
-                <td>09이재영<br>(31세)</td>
-            </tr>
-            <tr>
-                <td>00박경완L</td>
-                <td>08박재홍<br>(36세)</td>
-                <td>05이병규<br>(32세)</td>
-                <td>13박희수上<br>(31세)</td>
-                <td>13장원삼上<br>(31세)</td>
-                <td>07박준수<br>(31세)</td>
-            </tr>
-            <tr>
-                <td>96박재홍L</td>
-                <td>05서튼*<br>(36세)</td>
-                <td>94윤덕규<br>(32세)</td>
-                <td>13신용운上<br>(31세)</td>
-                <td>00김대익<br>(28세)</td>
-                <td>07김민기<br>(31세)</td>
-            </tr>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <thead>
+                <tr>
+                    <th style="width: 50px;"></td>
+                    <th style="width: 120px;">L선수</td>
+                    <th style="width: 120px;">재료1(10)</td>
+                    <th style="width: 120px;">재료2(9)</td>
+                    <th style="width: 120px;">재료3(8)</td>
+                    <th style="width: 120px;">재료4(8)</td>
+                    <th style="width: 120px;">재료5(6)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="7">1주차</td>
+                    <td>83장명부L</td>
+                    <td>09페타지니<br>(39세)</td>
+                    <td>87이광은<br>(33세)</td>
+                    <td>86김재박A<br>(33세)</td>
+                    <td>11안지만上<br>(29세)</td>
+                    <td>11이승호上<br>(31세)</td>
+                </tr>
+                <tr>
+                    <td>13이재학L</td>
+                    <td>07양준혁<br>(39세)</td>
+                    <td>13채태인<br>(32세)</td>
+                    <td>88한영준A<br>(27세)</td>
+                    <td>85김광수A<br>(27세)</td>
+                    <td>11윤성환上<br>(31세)</td>
+                </tr>
+                <tr>
+                    <td>95김용수L</td>
+                    <td>05데이비스<br>(37세)</td>
+                    <td>10박한이<br>(32세)</td>
+                    <td>86김형석<br>(25세)</td>
+                    <td>13모창민<br>(29세)</td>
+                    <td>10김일엽<br>(31세)</td>
+                </tr>
+                <tr>
+                    <td>87장효조L</td>
+                    <td>04피어리<br>(36세)</td>
+                    <td>09신명철<br>(32세)</td>
+                    <td>87정구선<br>(32세)</td>
+                    <td>83김봉연A<br>(32세)</td>
+                    <td>10김사율<br>(31세)</td>
+                </tr>
+                <tr>
+                    <td>10이대호L</td>
+                    <td>10조인성<br>(36세)</td>
+                    <td>07박진만<br>(32세)</td>
+                    <td>83김봉연<br>(32세)</td>
+                    <td>09이진영<br>(30세)</td>
+                    <td>09이재영<br>(31세)</td>
+                </tr>
+                <tr>
+                    <td>00박경완L</td>
+                    <td>08박재홍<br>(36세)</td>
+                    <td>05이병규<br>(32세)</td>
+                    <td>13박희수上<br>(31세)</td>
+                    <td>13장원삼上<br>(31세)</td>
+                    <td>07박준수<br>(31세)</td>
+                </tr>
+                <tr>
+                    <td>96박재홍L</td>
+                    <td>05서튼*<br>(36세)</td>
+                    <td>94윤덕규<br>(32세)</td>
+                    <td>13신용운上<br>(31세)</td>
+                    <td>00김대익<br>(28세)</td>
+                    <td>07김민기<br>(31세)</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>
