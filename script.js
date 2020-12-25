@@ -1,20 +1,32 @@
 function main () {
+
+    var albumData = jQuery.getJSON('album.json');
+
     var players = document.getElementsByTagName('td');
     for (let player of players) {
-        if (player.innerText.match('L') && !player.innerText.match('Lv')) {
+        var name = players.innerHTML.split('<br>')[0];
+        name = name.replace('*','');
+        if (name.match('L')) {
             player.classList.add('player_l');
-        } else if (player.innerText.match('A')) {
+        } else if (name.match('A')) {
             player.classList.add('player_a');
-        } else if (player.innerText.match('G')) {
+        } else if (name.match('G')) {
             player.classList.add('player_g');
-        } else if (player.innerText.match('R')) {
+        } else if (name.match('R')) {
             player.classList.add('player_r');
-        } else if (player.innerText.match('M')) {
+        } else if (name.match('M')) {
             player.classList.add('player_m');
-        } else if (player.innerText.match('K')) {
+        } else if (name.match('K')) {
             player.classList.add('player_k');
-        } else if (player.innerText.match('T')) {
+        } else if (name.match('T')) {
             player.classList.add('player_t');
+        }
+
+        for (let album of albumData) {
+            if (album.players.filter(plr => plr == name).length) {
+                player.classList.add('album');
+                break;
+            }
         }
     }
 }
