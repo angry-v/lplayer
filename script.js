@@ -1,9 +1,7 @@
 function main () {
     var players = document.getElementsByTagName('td');
     for (let player of players) {
-        if (player.innerText[player.innerText.length-1] == 'L') {
-            player.classList.add('player_l');
-        } else if (player.innerText.match('A')) {
+        if (player.innerText.match('A')) {
             player.classList.add('player_a');
         } else if (player.innerText.match('G')) {
             player.classList.add('player_g');
@@ -13,6 +11,8 @@ function main () {
             player.classList.add('player_m');
         } else if (player.innerText.match('K')) {
             player.classList.add('player_k');
+        } else if (player.innerText.match('T')) {
+            player.classList.add('player_t');
         }
     }
 }
