@@ -1620,7 +1620,7 @@ function main () {
 
     var players = document.getElementsByTagName('td');
     for (let player of players) {
-        var name = players.innerHTML.split('<br>')[0];
+        var name = player.innerHTML.split('<br>')[0];
         name = name.replace('*','');
         if (name.match('L')) {
             player.classList.add('player_l');
