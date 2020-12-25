@@ -1,7 +1,7 @@
 function main () {
     var players = document.getElementsByTagName('td');
     for (let player of players) {
-        if (player.innerText.match('L')) {
+        if (player.innerText.match('L') && !player.innerText.match('Lv')) {
             player.classList.add('player_l');
         } else if (player.innerText.match('A')) {
             player.classList.add('player_a');
