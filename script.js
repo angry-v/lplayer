@@ -1640,7 +1640,7 @@ function main () {
 
         for (let album of albumData) {
             if (album.players.filter(plr => plr == name).length) {
-                player.classList.add('album');
+                player.innerHTML = '<div class="album">' + player.innerHTML + '</div>';
                 break;
             }
         }
